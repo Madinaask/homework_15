@@ -1,0 +1,42 @@
+.favorites-page h1 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--color-text-light);
+}
+
+.favorites-empty p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.favorites-link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.favorites-link:hover {
+  text-decoration: underline;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .recipes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}

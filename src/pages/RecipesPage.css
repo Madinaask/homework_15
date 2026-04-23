@@ -1,0 +1,28 @@
+.recipes-page h1 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .recipes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}
